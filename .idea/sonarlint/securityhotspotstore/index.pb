@@ -4,5 +4,7 @@
 :
 
 .gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
-K
-public/All-Texts/styles.txt,6/5/659bb3fe46be9c3df7c2ab2bee7ae8992603168d
+F
+src/styles/globals.css,f/4/f451456fbd2ac1cc3825255bfe3cd58d1971e047
+B
+tailwind.config.js,0/9/0918cbb76f2c44f223706cec9d31a32cd1177ce4
