@@ -11,7 +11,7 @@ const projects = [
       "This is my personal portfolio website that built using Next.js and Tailwind CSS.",
     image: "/portfolio.png",
     github: "https://github.com/MUOliver1026/Oliver_Wu_Portfolio",
-    link: "https://google.com/",
+    link: "https://oliver-wu.vercel.app/",
   },
   {
     name: "Global Pay",
