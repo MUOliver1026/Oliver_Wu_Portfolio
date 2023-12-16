@@ -6,27 +6,27 @@ import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
 
 const projects = [
   {
+    name: "Tutor Trackr",
+    description:
+        "Tutor Trackr, a tutor management platform for connecting students and tutors. Utilized Next.js, TypeScript, Tailwind CSS, GraphQL, and Apollo Server.",
+    image: "/tutor-management.png",
+    github: "https://github.com/MUOliver1026/tutor_management_platform",
+    // link: "https://google.com/",
+  },
+  {
     name: "Personal Portfolio",
     description:
-      "This is my personal portfolio website that built using Next.js and Tailwind CSS.",
+      "This is my personal portfolio website that built using Next.js, TypeScript, and Tailwind CSS.",
     image: "/portfolio.png",
     github: "https://github.com/MUOliver1026/Oliver_Wu_Portfolio",
     link: "https://oliver-wu.vercel.app/",
   },
   {
     name: "Global Pay",
-    description: "A payment platform for global businesses. Developed and deployed during internship",
+    description: "A payment platform for global businesses. Developed and deployed during internship, built using Next.js, JavaScript, Tailwind CSS, and REST API.",
     image: "/global-pay.png",
     github: "https://github.com/MUOliver1026",
     link: "https://www.global-pay.com.au/",
-  },
-  {
-    name: "Tutor Management System",
-    description:
-      "Graduation project to develop a web application for tutors and students to manage their tutoring sessions.",
-    image: "/tutor-management.png",
-    github: "https://github.com/MUOliver1026",
-    link: "https://google.com/",
   },
 ]
 
@@ -45,15 +45,25 @@ const ProjectsSection = () => {
               <SlideUp offset="-300px 0px -300px 0px">
                 <div className="flex flex-col  animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12">
                   <div className=" md:w-1/2">
-                    <Link href={project.link}>
-                      <Image
-                        src={project.image}
-                        alt=""
-                        width={1000}
-                        height={1000}
-                        className="rounded-xl shadow-xl hover:opacity-70"
-                      />
-                    </Link>
+                    {project.link ? (
+                        <Link href={project.link}>
+                            <Image
+                                src={project.image}
+                                alt=""
+                                width={1000}
+                                height={1000}
+                                className="rounded-xl shadow-xl hover:opacity-70"
+                            />
+                        </Link>
+                    ) : (
+                        <Image
+                            src={project.image}
+                            alt=""
+                            width={1000}
+                            height={1000}
+                            className="rounded-xl shadow-xl"
+                        />
+                    )}
                   </div>
                   <div className="mt-8 md:w-1/2">
                     <h1 className="text-4xl font-bold mb-6">{project.name}</h1>
@@ -67,12 +77,13 @@ const ProjectsSection = () => {
                           className="hover:-translate-y-1 transition-transform cursor-pointer"
                         />
                       </Link>
-                      <Link href={project.link} target="_blank">
-                        <BsArrowUpRightSquare
-                          size={30}
-                          className="hover:-translate-y-1 transition-transform cursor-pointer"
-                        />
-                      </Link>
+                      {project.link &&
+                          <Link href={project.link} target="_blank">
+                            <BsArrowUpRightSquare
+                                size={30}
+                                className="hover:-translate-y-1 transition-transform cursor-pointer"
+                            />
+                          </Link>}
                     </div>
                   </div>
                 </div>
