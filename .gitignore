@@ -3,3 +3,4 @@ node_modules
 .vscode
 demo
 .idea
+.DS_Store

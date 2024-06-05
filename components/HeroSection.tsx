@@ -25,7 +25,7 @@ const HeroSection = () => {
               <span className="font-semibold text-teal-600">
               Front-end and Full Stack Engineer{" "}
             </span>
-              based in Australia. Working towards creating interesting things in the world.
+              based in Melbourne, Australia. Working towards creating interesting things in the world.
             </p>
             <a
                 href={resumeUrl}
