@@ -2,23 +2,29 @@ import React from "react"
 import Image from "next/image"
 
 const skills = [
-  { skill: "HTML" },
-  { skill: "CSS" },
-  { skill: "JavaScript" },
-  { skill: "TypeScript" },
-  { skill: "Graph QL" },
-  { skill: "Restful API" },
-  { skill: "Python" },
-  { skill: "React" },
+  { skill: "React.js" },
+  { skill: "React Native" },
   { skill: "Next.js" },
+  { skill: "TypeScript" },
+  { skill: "JavaScript" },
   { skill: "Node.js" },
   { skill: "Express.js" },
-  { skill: "Tailwind CSS" },
-  { skill: "Git" },
-  { skill: "AWS" },
-  { skill: "Rust" },
-  { skill: "SQL" },
+  { skill: "GraphQL" },
+  { skill: "Prisma" },
+  { skill: "Drizzle ORM" },
+  { skill: "PostgreSQL" },
   { skill: "MongoDB" },
+  { skill: "MySQL" },
+  { skill: "Tailwind CSS" },
+  { skill: "MUI" },
+  { skill: "Redux" },
+  { skill: "Docker" },
+  { skill: "CI/CD" },
+  { skill: "AWS" },
+  { skill: "GCP" },
+  { skill: "Azure" },
+  { skill: "Python" },
+  { skill: "Git" }
 ]
 
 const AboutSection = () => {
@@ -31,39 +37,40 @@ const AboutSection = () => {
         </h1>
 
         <div className="flex flex-col space-y-10 items-stretch justify-center align-top md:space-x-10 md:space-y-0 md:p-4 md:flex-row md:text-left">
-          <div className="md:w-1/2 ">
+          <div className="md:w-1/2">
             <h1 className="text-center text-2xl font-bold mb-6 md:text-left">
               Get to know me!
             </h1>
             <p>
               Hi, my name is Oliver and I am a{" "}
-              <span className="font-bold">{"highly ambitious"}</span>,
-              <span className="font-bold">{" self-motivated"}</span>, and
-              <span className="font-bold">{" driven"}</span> software engineer
+              <span className="font-bold">{"results-driven"}</span>,
+              <span className="font-bold">{" passionate"}</span>, and
+              <span className="font-bold">{" innovative"}</span> Full Stack Engineer
               based in Melbourne, Australia.
             </p>
             <br />
             <p>
-              I graduated from UNSW, Sydney in 2023
-              with a Master in Information Technology and have been working in the
-              frontend and full stack development field ever since.
+              I graduated from the University of New South Wales (UNSW) in 2023
+              with a Master of Information Technology (Artificial Intelligence) and have been
+              building scalable web applications with React, Next.js, and TypeScript ever since.
             </p>
             <br />
             <p>
-              I have a wide range of hobbies and passions that keep me busy.
-              From watching football games, playing video games, traveling and finding delicious food,
-              I am always loving the feeling of learning new things.
+              My expertise includes building scalable architectures, optimizing system performance,
+              and integrating secure authentication and payment solutions. I'm experienced
+              in DevOps, cloud deployment (AWS, GCP, Azure), and Agile methodologies with a
+              proven track record of enhancing system efficiency and improving user engagement.
             </p>
             <br />
             <p>
               I believe that you should{" "}
               <span className="font-bold text-teal-500">
-                never stop growing
+                continually innovate and optimize
               </span>{" "}
-              and that&#39;s what I strive to do, I have a passion for
-              technology and a desire to always push the limits of what is
-              possible. I am excited to see where my career takes me and am
-              always open to new opportunities. 🙂
+              and that&#39;s what I strive to do. I have a passion for
+              technology and a desire to create solutions that make a real impact.
+              I'm excited to collaborate on challenging projects and am
+              always open to new opportunities. 🚀
             </p>
           </div>
           <div className="text-center md:w-1/2 md:text-left">
